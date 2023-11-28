@@ -1,161 +1,223 @@
 /* poppins-300 - latin */
 @font-face {
-    font-display: swap;
-    font-family: 'Poppins';;
-    font-weight: 300;
-    src: url('../fonts/poppins-v20-latin-300.woff2') format('woff2'); 
-  }
-  
-  /* poppins-regular - latin */
-  @font-face {
-    font-display: swap;
-    font-family: 'Poppins';
-    font-weight: 400;
-    src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2');
-  }
-  
-  /* poppins-600 - latin */
-  @font-face {
-    font-display: swap;
-    font-family: 'Poppins';
-    font-weight: 600;
-    src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2'); 
-  }
-  
-  /* poppins-900 - latin */
-  @font-face {
-    font-display: swap; 
-    font-family: 'Poppins';
-    font-weight: 900;
-    src: url('../fonts/poppins-v20-latin-900.woff2') format('woff2'); 
-  }
+  font-display: swap;
+  font-family: "Poppins";
+  font-weight: 300;
+  src: url("../fonts/poppins-v20-latin-300.woff2") format("woff2");
+}
+
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-weight: 400;
+  src: url("../fonts/poppins-v20-latin-regular.woff2") format("woff2");
+}
+
+/* poppins-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-weight: 600;
+  src: url("../fonts/poppins-v20-latin-600.woff2") format("woff2");
+}
+
+/* poppins-900 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-weight: 900;
+  src: url("../fonts/poppins-v20-latin-900.woff2") format("woff2");
+}
 
 :root {
-    --color-primary-light: #FAF4EA;
-    --color-primary-dark: #31261A;
-    --color-main: #819B57;
-    --color-main-accent: #465929;
+  --color-primary-light: #faf4ea;
+  --color-primary-dark: #31261a;
+  --color-main: #819b57;
+  --color-main-accent: #465929;
 }
 
 /* base */
+* {
+  box-sizing: border-box;
+}
+
 body {
-    color: var(--color-primary-dark);
-    font-size: 18px;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.5;
-    font-family: 'poppins', sans-serif;
+  color: var(--color-primary-dark);
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  font-family: "poppins", sans-serif;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
+}
+
+.container {
+  height: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.sections {
+  padding: 48px 0;
 }
 
 /* button */
 .button {
-    color:var(--color-primary-light);
-    background: var(--color-main);
-    border: 2px solid var(--color-main);
-    border-radius: 8px;
-    font-weight: 600;
-    cursor: pointer;
+  padding: 16px 32px;
+  color: var(--color-primary-light);
+  background: var(--color-main);
+  border: 2px solid var(--color-main);
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .button:hover {
-    background-color: transparent;
-    color: var(--color-main-accent);
+  background-color: transparent;
+  color: var(--color-main-accent);
 }
 
 /* links */
 .link {
-    color: var(--color-primary-light);
-    text-decoration: none;
+  color: var(--color-primary-light);
+  text-decoration: none;
 }
 
 .link:hover {
-    color: var(--color-main-accent);
-    font-weight: 600;
+  color: var(--color-main-accent);
+  font-weight: 600;
 }
 
-/* hero-title */
+/* hero section*/
+.hero-section {
+  padding: 272px 0;
+}
+
 .hero-title {
-    color: var(--color-primary-light);
-    font-size: 128px;
-    font-weight: 900;
-    text-align: center;   
+  color: var(--color-primary-light);
+  font-size: 128px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 0;
 }
 
 .hero-title .accent {
-    color: var(--color-main);    
+  color: var(--color-main);
 }
 
-/* advantage sec */
+/* advantage section */
 .advantage-list {
-    color: var(--color-primary-light);
-    background: var(--color-main);
+  color: var(--color-primary-light);
+  background: var(--color-main);
 }
 
 .advantage-item {
-    font-weight: 300;
-    font-size: 20px;
+  font-weight: 300;
+  font-size: 20px;
 }
 
 /* sec titles */
 .section-title {
-    color: var(--color-primary-dark);
-    font-weight: 900;
-    font-size: 64px;
-    line-height: 1.3;
+  color: var(--color-primary-dark);
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 1.3;
 }
 
 .section-title .accent {
-    color: var(--color-main-accent);
+  color: var(--color-main-accent);
 }
 
 /* traditions section */
-.trad-sec-text .clrmain {
-    color: var(--color-main); 
-    font-weight: 600;
+.trad-section {
+  padding-top: 96px;
 }
 
-.trad-sec-text .uppercase {
-    text-transform: uppercase;
+.trad-title {
+  margin-bottom: 42px;
+}
+
+.trad-section-text .clrmain {
+  color: var(--color-main);
+  font-weight: 600;
+}
+
+.trad-section-text .uppercase {
+  text-transform: uppercase;
 }
 
 /* cooks section */
+.cooks-section-title {
+  margin-bottom: 90px;
+}
+
 .cooks-title {
-    font-size: 40px;
-    font-weight: 600;
+  margin-bottom: 16px;
+  font-size: 40px;
+  font-weight: 600;
 }
 
 /* format section */
+.format-section-title {
+  margin-bottom: 90px;
+}
+
 .format-title {
-    font-size: 24px;
-    font-weight: 600;    
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .format-text {
-    font-size: 14px;
-    font-weight: 300;
+  font-size: 14px;
+  font-weight: 300;
 }
 
+/* contact section */
+.contact-section-title {
+  margin-bottom: 16px;
+}
 /* footer */
 .address-parent {
-    font-style: normal;
+  font-style: normal;
 }
 
 .address-link {
-    color: var(--color-primary-light);
-    font-size: 16px;
-    font-weight: 300;
-    text-decoration: none;
+  color: var(--color-primary-light);
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: none;
 }
 
 .address-link:hover {
-    color: var(--color-main-accent);
+  color: var(--color-main-accent);
 }
 
 .address-copyright {
-    color: #A18268;
-    font-size: 14px;
+  color: #a18268;
+  font-size: 14px;
 }
