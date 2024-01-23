@@ -63,6 +63,8 @@ p {
 }
 
 ul {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 
@@ -110,7 +112,27 @@ ul {
 
 .link:hover {
   color: var(--color-main-accent);
-  font-weight: 600;
+}
+
+/* header */
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 64px;
+  flex-grow: 1;
+  justify-content: center;
 }
 
 /* hero section*/
@@ -131,12 +153,19 @@ ul {
 }
 
 /* advantage section */
-.advantage-list {
-  color: var(--color-primary-light);
+.advantage-section {
+  padding: 16px 0;
   background: var(--color-main);
 }
 
+.advantage-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
 .advantage-item {
+  color: var(--color-primary-light);
   font-weight: 300;
   font-size: 20px;
 }
@@ -158,8 +187,22 @@ ul {
   padding-top: 96px;
 }
 
+.trad-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.trad-content {
+  max-width: 710px;
+}
+
 .trad-title {
   margin-bottom: 42px;
+}
+
+.trad-section-text.limited {
+  max-width: 340px;
 }
 
 .trad-section-text .clrmain {
@@ -190,6 +233,17 @@ ul {
 .format-title {
   font-size: 24px;
   font-weight: 600;
+}
+
+.format-list {
+  display: flex;
+  gap: 20px;
+  padding: 24px;
+}
+
+.format-card {
+  border: 1px solid lightgrey;
+  border-radius: 16px;
 }
 
 .format-text {
